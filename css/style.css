@@ -1,0 +1,284 @@
+/* Default */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+    /* height: 100%; */
+    background-color: whitesmoke;
+}
+
+
+/* .dropdownsSelect::-webkit-scrollbar {
+    display: none;
+} */
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0 !important;
+    list-style-type: none;
+    margin-bottom: 0 !important;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Default (End) */
+
+.flex,
+.list {
+    display: flex;
+}
+
+.inputCont {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    /* height: 800px; */
+}
+
+.appendCont {
+    width: 600px;
+}
+
+.badges {
+    outline: none;
+    width: 100%;
+}
+
+.badges,
+.inputBadgeCont,
+.options,
+.file-choose {
+    padding: 10px 14px;
+}
+
+.removeSearch {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.badges::placeholder,
+.badges,
+.values,
+.drop-file-icon,
+.texts,
+.dropdownsSelect {
+    font-size: 16px;
+    color: #000000;
+}
+
+.list {
+    background-color: bisque;
+    padding: 7px 14px;
+    margin-bottom: 10px;
+    width: 100%;
+    animation: boxes 0.6s;
+}
+
+@keyframes boxes {
+    0% {
+        transform: scaleX(0);
+        opacity: 1;
+    }
+}
+
+
+/* For Input File */
+
+.noneI,
+.input-default.removed {
+    display: none;
+}
+
+.spaceBetween,
+.list {
+    justify-content: space-between;
+}
+
+.input-default,
+.inputBadgeCont,
+.badges {
+    border: 1px solid;
+    border-color: black;
+    background-color: #fff;
+}
+
+.background-input-upload,
+.selectCont,
+.otpCont,
+.DropDownMain {
+    margin-top: 50px;
+}
+
+.file-choose {
+    cursor: pointer;
+    font-size: 16px;
+    height: 100%;
+    padding: 10px 14px;
+    background-color: #00999a;
+    color: #fff;
+}
+
+.resultCont .list:last-child {
+    margin-bottom: 0;
+}
+
+
+/* For Input File (End)*/
+
+
+/* for select bropdown */
+
+.texts,
+.options,
+.inputBadgeCont,
+.removeSearch {
+    cursor: pointer;
+}
+
+.options {
+    display: block;
+}
+
+.options.selected {
+    background-color: darkgray;
+    color: crimson;
+}
+
+.dropdownsSelect span {
+    margin-bottom: 6px;
+    border-bottom: 1px solid #e0d9d9;
+}
+
+.dropdownsSelect span:hover {
+    background-color: #00999a;
+    color: #ffffff;
+}
+
+.dropdownsSelect span:last-child {
+    margin-bottom: 0;
+}
+
+.dropdownsSelect.selectOpen {
+    height: 294px;
+    overflow: scroll;
+    margin-top: 20px;
+}
+
+.dropdownsSelect {
+    height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+    background-color: #ffff;
+}
+
+.itemCenter {
+    align-items: center;
+}
+
+.input-default {
+    padding-left: 14px;
+}
+
+.aeroIcon {
+    transition: 0.4s;
+}
+
+.aeroIcon img {
+    width: 18px;
+    height: 10px;
+}
+
+.aeroIcon.rotate {
+    transform: rotate(-180deg);
+}
+
+
+/* for select bropdown (End)*/
+
+
+/* OTP screen */
+
+.otSc {
+    margin: 0;
+    margin-right: 16px;
+    border: 1px solid;
+    padding: 10px 0px;
+    font-size: 38px;
+    text-align: center;
+    width: 100%;
+    outline: none;
+}
+
+.otSc:last-child {
+    margin-right: 0;
+    /* border-radius: 50%; */
+    /* width: 200px;
+    height: 200px; */
+}
+
+
+/* OTP screen (End)*/
+
+
+/* For Dropdown */
+
+.selectedMenu .Dropdown {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+.dropCont {
+    position: relative;
+}
+
+.Dropdown {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    width: 130px;
+    text-align: center;
+    padding: 11px 6px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: 0.4s;
+}
+
+.dropText {
+    cursor: pointer;
+    display: block;
+}
+
+
+/* For Dropdown (End)*/
+
+
+/* For responsivness */
+
+@media(max-width: 550px) {
+
+    .appendCont,
+    .inputCont {
+        width: 100%;
+    }
+
+    .inputCont {
+        margin: 0;
+    }
+}
+
+
+/* For responsivness (End)*/
